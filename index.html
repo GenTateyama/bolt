@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
   </head>
   <body class="body">
-      <header class="header wrapper">
+      <header class="header">
         <div class="inner header-inner clearfix">
           <i class="fas fa-bolt"></i>
           <a href="" class="contact_btn">Contact</a>
@@ -26,24 +26,22 @@
 
       <!--theme の部分はページ全体の見出しなのでdivタグで囲い、セクショニングコンテンツ（ section や article ）では囲わないようにしましょう。-->
       <main class="main">
-        <div class="theme wrapper">
+        <div class="theme">
           <div class="inner theme-inner title_font">
             <h1 class="theme_title">Bolt <br class="sp">Theme</h1>
             <p class="theme_subtitle">FREE BOOTSTRAP<br class="sp"> THEMES</p>
           </div>
         </div>
-        <section class="message wrapper">
-          <div class="inner message-inner">
-            <div class="clearfix">
-              <image class="img-iPhone" src="./img/iphone.png"></image>
-              <div class="message-container">
-                <h2 class="message_title title_font section_title">WHAT WE CAN DO?</h2>
-                <p class="message_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
+        <section class="message">
+          <div class="inner message-inner clearfix">
+            <image class="img-iPhone" src="./img/iphone.png"></image>
+            <div class="message-container">
+              <h2 class="message_title title_font section_title">WHAT WE CAN DO?</h2>
+              <p class="message_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
           </div>
         </section>
-        <article class="our-work wrapper">
+        <article class="our-work">
           <div class="inner our-work-inner">
             <h2 class="our-work_title title_font section_title">OUR LATEST WORK</h2>
             <ul class="clearfix">
@@ -84,7 +82,7 @@
             </div>
           </div>
         </article>
-        <section class="our-skills wrapper">
+        <section class="our-skills">
           <div class="inner our-skills-inner">
             <h2 class="our-skills_title title_font section_title">OUR SKILLS</h2>
             <ul>
@@ -115,17 +113,25 @@
             </ul>
           </div>
         </section>
-        <nav class="sns wrapper">
+        <nav class="sns">
           <div class="inner sns-inner clearfix">
-            <a class="fab fa-facebook-f icon"></a>
-            <a class="fas fa-basketball-ball icon"></a>
-            <a class="fab fa-twitter icon"></a>
-            <a class="fas fa-envelope icon"></a>
+            <a href="" class="icon">
+              <i class="fab fa-facebook-f icon_font"></i>
+            </a>
+            <a href="" class="icon">
+              <i class="fas fa-basketball-ball icon_font"></i>
+            </a>
+            <a href="" class="icon">
+              <i class="fab fa-twitter icon_font"></i>
+            </a>
+            <a href="" class="icon">
+              <i class="fas fa-envelope icon_font"></i>
+            </a>
           </div>
         </nav>
       </main>
 
-      <footer class="footer wrapper">
+      <footer class="footer">
         <div  class="inner footer-inner">
           <p class="copyright">Crafted with❤by BlackTie.co.</p>
         </div>

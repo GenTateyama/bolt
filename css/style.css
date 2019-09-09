@@ -7,10 +7,6 @@
   clear: both;
 }
 
-.wrapper{
-  width: 100%;
-}
-
 .inner{
   width: 1100px;
   margin: 0 auto;
@@ -51,6 +47,7 @@
 }
 /*-----------------ここからヘッダー---------------*/
 .header{
+  width: 100%;
   position: fixed;
   top: 0px;
   background-color: white;
@@ -167,6 +164,7 @@
 }
 
 .work_img{
+  display: inline-block;
   transition: 0.3s;
   opacity: 0.7;
 }
@@ -242,6 +240,10 @@ Chromeでページを読み込んだときにこの効果が出てしまうこ�
 
 .icon{
   transition: 0.3s;
+  display: inline-block;
+}
+
+.icon_font{
   width: 185px;
   font-size: 40px;
   color: #74cfae;
