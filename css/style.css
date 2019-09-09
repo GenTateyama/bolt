@@ -279,7 +279,6 @@ chrome以外のブラウザだと不具合が出るらしい。
   }
 
   .message-inner{
-    padding-top: 50px;
     padding-bottom: 25px;
     text-align: center;
   }
@@ -295,6 +294,10 @@ chrome以外のブラウザだと不具合が出るらしい。
     width: 90%;
   }
   /*---ここまでmessage---------*/
+  .works{
+    margin-bottom: 80px;
+    font-size: 0;
+  }
   .work{
     width: 100%;
     float: none;
@@ -312,6 +315,11 @@ chrome以外のブラウザだと不具合が出るらしい。
   .work:first-child{
     margin-top: 0px;
   }
+
+  .work:last-child{
+    margin-bottom: 0px;
+  }
+
 
   .inquiry{
     margin-top: 0px;
@@ -358,17 +366,17 @@ chrome以外のブラウザだと不具合が出るらしい。
   .sp{
     display: inline-block;
   }
-  .thema-inner{
+  .theme-inner{
     padding: 160px 0px 130px 0px;
     text-align: center;
   }
 
-  .thema_title{
+  .theme_title{
     font-size: 80px;
   }
 
   /*---ここまでthema---------*/
-  .sns{
+  .sns-inner{
     padding: 50px 0px;
   }
 
