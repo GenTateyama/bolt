@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/*-----------------共通スタイル---------------*/
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.section_title{
+  font-size: 24px;
+}
+
+/*---------------ボタンの設定--------------*/
+.contact_btn{
+  transition: 0.3s;
+  font-size: 12px;
+  color: white;
+  background-color: #74cfae;
+  /*この指定がないとデフォルト指定（下線）がついたまま*/
+  text-decoration: none;
+}
+.contact_btn:hover{
+  color: #333;
+}
+.header-inner .contact_btn{
+  padding: 14px 12px;
+  float: right;
+}
+.inquiry .contact_btn{
+  float: none;
+  margin-right: 0px;
+}
+
+.our-work-inner .contact_btn{
+  padding: 14px 20px;
+  display: inline-block;
+  float: left;
+  margin-right: 90px;
+}
+/*-----------------ここからヘッダー---------------*/
+.header{
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+}
+
+.header-inner{
+  padding: 15px 0px;
+}
+
+.fa-bolt{
+  font-size: 36px;
+  float: left;
+  opacity: 0.5;
+}
+
+.humberger{
+  padding: 10px;
+  color:  #ddd;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  float: right;
+  display: none;
+}
+/*-----------------ここまでヘッダー---------------*/
+/*-----------------ここからメイン---------------*/
+.main{
+  margin-top: 70px;
+}
+
+.thema{
+  background-color: #f2f2f2;
+}
+
+.thema-inner{
+  padding: 250px 0px;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+.thema_title{
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #74cfae;
+}
+
+.thema_subtitle{
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+.sp{
+  display: none;
+}
+/*-----------------ここまでthema---------------*/
+
+.message{
+  background-color:	#74cfae;
+}
+
+.message-inner{
+  padding-top: 50px;
+}
+
+.message-wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-iPhone{
+  float: left;
+}
+
+.message-container{
+  float: right;
+  color: white;
+  width: 680px;
+  text-align: center;
+}
+
+.message_title{
+  margin-bottom: 35px;
+  font-family: "Raleway";
+}
+
+.message_text{
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Lato";
+}
+/*-----------------ここまでmessage---------------*/
+
+.our-work{
+  background-color: #f2f2f2;
+}
+
+.our-work-inner{
+  padding-top: 60px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.our-work_title{
+  margin-bottom: 40px;
+  font-family: "Raleway";
+}
+
+.work{
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+}
+.work:nth-child(3n+1){
+  clear: both;
+  margin-left: 0;
+}
+.work:nth-child(n+4){
+  margin-top: 80px;
+}
+
+.work_img{
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.work_img:hover{
+  opacity: 1.0;
+}
+
+.inquiry{
+  margin-top: 90px;
+  display: inline-block;
+}
+
+.inquiry_text{
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 24px;
+  float: left;
+  width: 570px;
+  margin-right: 90px;
+  opacity: 0.7;
+}
+/*-----------------ここまでour-work---------------*/
+.our-skills{
+  background-color: #4e4e4e;
+}
+
+.our-skills-inner{
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: white;
+  text-align: center;
+}
+
+.our-skills_title{
+  font-family: "Raleway";
+  margin-bottom: 70px;
+}
+
+/*マイルール：疑似要素との間は詰める*/
+.skill{
+  display: inline-block;
+  margin-left: 180px;
+}
+.skill:first-child{
+  margin-left: 0px;
+}
+
+.skill figcaption{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+/*-----------------ここまでour-skills---------------*/
+.sns{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 200px 0px;
+}
+
+.sns-inner{
+  width: 740px;
+}
+/*--
+ここでtransition を指定すると、最初の読み込みを含めた全ての速度を指定してしまう・・・
+～transitionについて～
+このプロパティは時間的変化を指定するプロパティなのですが基本的にhoverだったりを
+させた時にふわっと変えたりするときに使うと思います。
+なのでhoverしたときにだけ効果を発揮してほしいものなのですが、
+Chromeでページを読み込んだときにこの効果が出てしまうことがあります。
+この症状は、jQueryを使って回避していきます。（ブックマーク参照）
+------*/
+.icon{
+  transition: 0.3s;
+  float: left;
+  width: 25%;
+  padding: 25px 0px;
+  font-size: 40px;
+  color: #74cfae;
+  line-height: 80px;
+}
+
+/*---------
+以下にtransitionを指定すると、「ホバー時のみ」の速さ指定になるが、
+chrome以外のブラウザだと不具合が出るらしい。
+--------------*/
+.icon:hover{
+  cursor: pointer;
+  background-color: white;
+}
+/*-----------------ここまでsns---------------*/
+.footer{
+  background-color: #74cfae;
+}
+
+.footer-inner{
+  padding: 20px 0px 25px 0px;
+}
+
+.copyright{
+  color: white;
+  font-size: 16px;
+  float: right;
+}
+/*-----------------ここまでfooter---------------*/
+/*-----------------ここからレスポンシブデザイン---------------*/
+/*-----------------ここからタブレット------------------------*/
+/*
+@media all and (max-width: 1199px){
+
+  .inner{
+    width: 97%;
+  }
+
+  .message-inner{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .img-iPhone{
+    float: none;
+    margin-bottom: 25px;
+  }
+
+  .message-container{
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+  /*---ここまでmessage---------*/
+/*  .work{
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+  }
+
+  .work:nth-child(n+4){
+    margin-top: 0px;
+  }
+
+  .work:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .work:first-child{
+    margin-top: 0px;
+  }
+
+  .inquiry{
+    margin-top: 0px;
+  }
+
+  .inquiry_text{
+    float: none;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .our-work-inner .contact_btn{
+    float: none;
+    margin-right: 0px;
+  }
+  /*---ここまでour-work---------*/
+/*  .our-skills_title{
+    margin-bottom: 40px;
+  }
+
+  .skill{
+    margin-left: 0px;
+    margin-top: 88px;
+    width: 100%;
+  }
+
+  .skill:first-child{
+    margin-top: 0px;
+  }
+} */
+
+/*----------------------ここまでタブレット-----------------------*/
+/*----------------------ここからスマートフォン-------------------*/
+/*@media all and (max-width: 767px){
+  .header-inner .contact_btn{
+    display: none;
+  }
+
+  .humberger{
+    display: inline-block;
+  }
+
+  /*---ここまでheader---------*/
+/*  .sp{
+    display: inline-block;
+  }
+  .thema-inner{
+    padding: 160px 0px 130px 0px;
+    text-align: center;
+  }
+
+  .thema_title{
+    font-size: 80px;
+  }
+
+  /*---ここまでthema---------*/
+/*  .sns{
+    padding: 50px 0px;
+  }
+
+  .icon{
+    width: 100%;
+  }
+  /*---ここまでsns---------*/
+}
+
+/*-----------------ここまでスマートフォン-------------------------*/
+/*-----------------ここまでレスポンシブデザイン-------------------*/
