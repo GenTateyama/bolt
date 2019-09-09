@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Bolt - Free Bootstrap 3 Theme</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>Bolt - Free Bootstrap 3 Theme</title>
     <meta name="description" content="	This is my portfolio site.">
     <meta neme="keyword"content="bolt, bootstrap, portfolio" >
     <meta name="viewport" content="width-device-width", initial-scale=1.0>
@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
   </head>
-  <body>
-    <wrapper>
-      <headeer class="header wrapper">
+  <body class="body">
+      <header class="header wrapper">
         <div class="inner header-inner clearfix">
           <i class="fas fa-bolt"></i>
           <a href="" class="contact_btn">Contact</a>
@@ -23,22 +22,22 @@
             <i class="fas fa-bars"></i>
           </a>
         </div>
-      </headeer>
+      </header>
 
       <!--theme の部分はページ全体の見出しなのでdivタグで囲い、セクショニングコンテンツ（ section や article ）では囲わないようにしましょう。-->
       <main class="main">
-        <div class="thema wrapper">
-          <div class="inner thema-inner">
-            <h1 class="thema_title">Bolt <br class="sp">Theme</h1>
-            <h2 class="thema_subtitle">FREE BOOTSTRAP<br class="sp"> THEMES</h2>
+        <div class="theme wrapper">
+          <div class="inner theme-inner title_font">
+            <h1 class="theme_title">Bolt <br class="sp">Theme</h1>
+            <p class="theme_subtitle">FREE BOOTSTRAP<br class="sp"> THEMES</p>
           </div>
         </div>
         <section class="message wrapper">
-          <div class="inner message-inner clearfix">
-            <div class="message-wrapper">
-              <image class="img-iPhone" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/iphone.png"></image>
+          <div class="inner message-inner">
+            <div class="clearfix">
+              <image class="img-iPhone" src="./img/iphone.png"></image>
               <div class="message-container">
-                <h3 class="message_title section_title">WHAT WE CAN DO?</h3>
+                <h2 class="message_title title_font section_title">WHAT WE CAN DO?</h2>
                 <p class="message_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
             </div>
@@ -46,25 +45,37 @@
         </section>
         <article class="our-work wrapper">
           <div class="inner our-work-inner">
-            <h3 class="our-work_title section_title">OUR LATEST WORK</h3>
+            <h2 class="our-work_title title_font section_title">OUR LATEST WORK</h2>
             <ul class="clearfix">
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/01.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/01.jpg">
+                </a>
               </li>
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/02.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/02.jpg">
+                </a>
               </li>
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/03.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/03.jpg">
+                </a>
               </li>
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/04.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/04.jpg">
+                </a>
               </li>
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/05.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/05.jpg">
+                </a>
               </li>
               <li class="work">
-                <img class="work_img" src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/06.jpg">
+                <a href="" class="work_img">
+                  <img src="./img/06.jpg">
+                </a>
               </li>
             </ul>
             <div class="inquiry clearfix"> <!--inquiry:問い合わせ -->
@@ -75,30 +86,30 @@
         </article>
         <section class="our-skills wrapper">
           <div class="inner our-skills-inner">
-            <h3 class="our-skills_title section_title">OUR SKILLS</h3>
+            <h2 class="our-skills_title title_font section_title">OUR SKILLS</h2>
             <ul>
               <li class="skill">
                 <figure>
-                  <img src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/circle_01.png">
-                  <figcaption>JavaScript</figcaption>
+                  <img src="./img/circle_01.png">
+                  <figcaption class="skill_cap">JavaScript</figcaption>
                 </figure>
               </li>
               <li class="skill">
                 <figure>
-                  <img src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/circle_02.png">
-                  <figcaption>Bootstrap</figcaption>
+                  <img src="./img/circle_02.png">
+                  <figcaption class="skill_cap">Bootstrap</figcaption>
                 </figure>
               </li>
               <li class="skill">
                 <figure>
-                  <img src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/circle_03.png">
-                  <figcaption>WordPress</figcaption>
+                  <img src="./img/circle_03.png">
+                  <figcaption class="skill_cap">WordPress</figcaption>
                 </figure>
               </li>
               <li class="skill">
                 <figure>
-                  <img src="file:///C:/Users/Hoshi/OneDrive/Desktop/Gizumo/Front%20Lesson/lesson9_bolt/img/circle_04.png">
-                  <figcaption>Photoshop</figcaption>
+                  <img src="./img/circle_04.png">
+                  <figcaption class="skill_cap">Photoshop</figcaption>
                 </figure>
               </li>
             </ul>
@@ -106,27 +117,18 @@
         </section>
         <nav class="sns wrapper">
           <div class="inner sns-inner clearfix">
-            <a href="">
-              <i class="fab fa-facebook-f icon"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-basketball-ball icon"></i>
-            </a>
-            <a href="">
-              <i class="fab fa-twitter icon"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-envelope icon"></i>
-            </a>
+            <a class="fab fa-facebook-f icon"></a>
+            <a class="fas fa-basketball-ball icon"></a>
+            <a class="fab fa-twitter icon"></a>
+            <a class="fas fa-envelope icon"></a>
           </div>
         </nav>
       </main>
 
       <footer class="footer wrapper">
-        <div  class="inner footer-inner clearfix">
+        <div  class="inner footer-inner">
           <p class="copyright">Crafted with❤by BlackTie.co.</p>
         </div>
       </footer>
-    </wrapper>
   </body>
 </html>

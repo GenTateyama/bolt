@@ -20,6 +20,13 @@
   font-size: 24px;
 }
 
+.body{
+  font-family: "Lato";
+}
+
+.title_font{
+  font-family: "Raleway"
+}
 /*---------------ボタンの設定--------------*/
 .contact_btn{
   transition: 0.3s;
@@ -36,16 +43,11 @@
   padding: 14px 12px;
   float: right;
 }
-.inquiry .contact_btn{
-  float: none;
-  margin-right: 0px;
-}
 
 .our-work-inner .contact_btn{
   padding: 14px 20px;
   display: inline-block;
   float: left;
-  margin-right: 90px;
 }
 /*-----------------ここからヘッダー---------------*/
 .header{
@@ -76,27 +78,26 @@
 /*-----------------ここまでヘッダー---------------*/
 /*-----------------ここからメイン---------------*/
 .main{
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
-.thema{
+.theme{
   background-color: #f2f2f2;
 }
 
-.thema-inner{
+.theme-inner{
   padding: 250px 0px;
   text-align: center;
-  font-family: "Raleway";
 }
 
-.thema_title{
+.theme_title{
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #74cfae;
 }
 
-.thema_subtitle{
+.theme_subtitle{
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -132,13 +133,11 @@
 
 .message_title{
   margin-bottom: 35px;
-  font-family: "Raleway";
 }
 
 .message_text{
   font-size: 20px;
   line-height: 30px;
-  font-family: "Lato";
 }
 /*-----------------ここまでmessage---------------*/
 
@@ -154,17 +153,13 @@
 
 .our-work_title{
   margin-bottom: 40px;
-  font-family: "Raleway";
 }
 
 .work{
   float: left;
-  width: 300px;
-  height: 300px;
   margin-left: 100px;
 }
 .work:nth-child(3n+1){
-  clear: both;
   margin-left: 0;
 }
 .work:nth-child(n+4){
@@ -185,7 +180,6 @@
 }
 
 .inquiry_text{
-  font-family: "Lato";
   font-size: 20px;
   line-height: 24px;
   float: left;
@@ -206,7 +200,6 @@
 }
 
 .our-skills_title{
-  font-family: "Raleway";
   margin-bottom: 70px;
 }
 
@@ -219,8 +212,8 @@
   margin-left: 0px;
 }
 
-.skill figcaption{
-  padding-top: 20px;
+ .skill_cap{
+  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -228,11 +221,10 @@
 .sns{
   text-align: center;
   background-color: #f2f2f2;
-  padding: 200px 0px;
 }
 
 .sns-inner{
-  width: 740px;
+  padding: 200px 0px;
 }
 /*--
 ここでtransition を指定すると、最初の読み込みを含めた全ての速度を指定してしまう・・・
@@ -243,24 +235,23 @@
 Chromeでページを読み込んだときにこの効果が出てしまうことがあります。
 この症状は、jQueryを使って回避していきます。（ブックマーク参照）
 ------*/
+.icon:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
 .icon{
   transition: 0.3s;
-  float: left;
-  width: 25%;
-  padding: 25px 0px;
+  width: 185px;
   font-size: 40px;
   color: #74cfae;
-  line-height: 80px;
+  padding: 25px 0px;
 }
 
 /*---------
 以下にtransitionを指定すると、「ホバー時のみ」の速さ指定になるが、
 chrome以外のブラウザだと不具合が出るらしい。
 --------------*/
-.icon:hover{
-  cursor: pointer;
-  background-color: white;
-}
 /*-----------------ここまでsns---------------*/
 .footer{
   background-color: #74cfae;
@@ -271,15 +262,15 @@ chrome以外のブラウザだと不具合が出るらしい。
 }
 
 .copyright{
+  text-align: right;
   color: white;
   font-size: 16px;
-  float: right;
 }
 /*-----------------ここまでfooter---------------*/
 /*-----------------ここからレスポンシブデザイン---------------*/
 /*-----------------ここからタブレット------------------------*/
-/*
-@media all and (max-width: 1199px){
+
+@media screen and (max-width: 1199px){
 
   .inner{
     width: 97%;
@@ -302,7 +293,7 @@ chrome以外のブラウザだと不具合が出るらしい。
     width: 90%;
   }
   /*---ここまでmessage---------*/
-/*  .work{
+  .work{
     width: 100%;
     float: none;
     margin-left: 0px;
@@ -333,10 +324,9 @@ chrome以外のブラウザだと不具合が出るらしい。
 
   .our-work-inner .contact_btn{
     float: none;
-    margin-right: 0px;
   }
   /*---ここまでour-work---------*/
-/*  .our-skills_title{
+  .our-skills_title{
     margin-bottom: 40px;
   }
 
@@ -349,11 +339,11 @@ chrome以外のブラウザだと不具合が出るらしい。
   .skill:first-child{
     margin-top: 0px;
   }
-} */
+}
 
 /*----------------------ここまでタブレット-----------------------*/
 /*----------------------ここからスマートフォン-------------------*/
-/*@media all and (max-width: 767px){
+@media screen and (max-width: 767px){
   .header-inner .contact_btn{
     display: none;
   }
@@ -363,7 +353,7 @@ chrome以外のブラウザだと不具合が出るらしい。
   }
 
   /*---ここまでheader---------*/
-/*  .sp{
+  .sp{
     display: inline-block;
   }
   .thema-inner{
@@ -376,7 +366,7 @@ chrome以外のブラウザだと不具合が出るらしい。
   }
 
   /*---ここまでthema---------*/
-/*  .sns{
+  .sns{
     padding: 50px 0px;
   }
 
